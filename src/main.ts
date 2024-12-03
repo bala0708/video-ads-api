@@ -8,12 +8,12 @@ async function bootstrap() {
   await app.listen(port, () => {
     console.log(`App running on port ${port}`);
   });
-}
-bootstrap();
+// }
+// bootstrap();
 
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
+// async function bootstrap() {
+//   const app = await NestFactory.create(AppModule, { cors: true });
 
   // Swagger configuration
   const config = new DocumentBuilder()
